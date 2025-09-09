@@ -9,7 +9,7 @@ export default function Welcome() {
 
   // Redirect to login if no user found
   React.useEffect(() => {
-    if (!user) nav("/note/login");
+    if (!user) nav("/login");
   }, [user, nav]);
 
   return (
@@ -38,7 +38,7 @@ export default function Welcome() {
           {/* Action Button */}
           <div className="mt-6 flex justify-center">
             <Link
-              to="/note/notes"
+              to="/notes"
               className="px-6 py-2 rounded-lg bg-blue-600 text-white text-sm font-medium shadow hover:bg-blue-700 transition"
             >
               Go to Notes

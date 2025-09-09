@@ -10,7 +10,7 @@ export default function OAuthSuccess() {
   useEffect(() => {
     const token = params.get("token");
     if (!token) {
-      nav("/note/login");
+      nav("/login");
       return;
     }
 
@@ -27,10 +27,10 @@ export default function OAuthSuccess() {
         // Save user in localStorage
         setUser(resp.data.user);
 
-        nav("/note/welcome");
+        nav("/welcome");
       } catch (err) {
         console.error("OAuth fetch error:", err);
-        nav("/note/login");
+        nav("/login");
       }
     })();
   }, []);

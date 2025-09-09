@@ -33,7 +33,7 @@ export default function Signup() {
     try {
       setLoading(true);
       await API.post("/auth/signup", form);
-      nav(`/note/verify-otp?email=${encodeURIComponent(form.email)}`);
+      nav(`/verify-otp?email=${encodeURIComponent(form.email)}`);
     } catch (err) {
       setError(err.response?.data?.message || "Signup failed");
     } finally {
@@ -93,7 +93,7 @@ export default function Signup() {
 
           <p className="mt-4 text-sm text-gray-600 text-center">
             Already have an account?{" "}
-            <a href="/note/login" className="text-blue-600 hover:underline">
+            <a href="/login" className="text-blue-600 hover:underline">
               Login
             </a>
           </p>

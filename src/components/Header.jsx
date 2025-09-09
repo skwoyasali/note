@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom'
 export default function Header(){
 const nav = useNavigate()
 const user = getUser()
-const logout = () => { clearAuth(); nav('/note/login') }
+const logout = () => { clearAuth(); nav('/login') }
 
 
 return (
 <header className="w-full py-4 px-4 bg-white shadow-sm flex items-center justify-between">
 <div className="flex items-center gap-3">
-<Link to="/note/welcome">
+<Link to="/welcome">
   <img 
     src="https://res.cloudinary.com/djlo5utij/image/upload/v1756900854/top_gafwmg.png" 
     alt="logo" 

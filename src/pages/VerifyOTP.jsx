@@ -24,7 +24,7 @@ setLoading(true)
 const resp = await API.post('/auth/verify-otp', { email, code })
 setToken(resp.data.token)
 setUser(resp.data.user)
-nav('/note/welcome')
+nav('/welcome')
 }catch(err){ setError(err.response?.data?.message || 'OTP verification failed') }
 finally{ setLoading(false) }
 }

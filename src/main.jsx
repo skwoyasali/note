@@ -14,34 +14,34 @@ import { getToken } from './utils/auth'
 
 const router = createBrowserRouter([
   {
-    path: '/note',
+    path: '/',
     element: <Signup />,
   },
   {
-    path: '/note/verify-otp',
+    path: '/verify-otp',
     element: <VerifyOTP />,
   },
   {
-    path: '/note/login',
+    path: '/login',
     element: <Login />,
   },
   {
-    path: '/note/oauth-success',
+    path: '/oauth-success',
     element: <OAuthSuccess />,
   },
   {
-    path: '/note/welcome',
+    path: '/welcome',
     element: <RequireAuth><Welcome /></RequireAuth>,
   },
   {
-    path: '/note/notes',
+    path: '/notes',
     element: <RequireAuth><Notes /></RequireAuth>,
   },
 ]);
 
 function RequireAuth({ children }){
 const token = getToken()
-if(!token) return <Navigate to="/note/login" replace />
+if(!token) return <Navigate to="/login" replace />
 return children
 }
 
