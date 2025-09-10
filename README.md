@@ -37,17 +37,16 @@ This project includes user authentication (email + OTP and Google OAuth), JWT-ba
 - npm or yarn
 
 ### 📥 1. Clone the repository
-```bash
+```
 git clone https://github.com/skwoyasali/note
 cd note
+npm install
 ```
-
----
 
 ### 🛠 2. Backend Setup
 
-```bash
-git https://github.com/skwoyasali/note-app/tree/main/Backend
+```
+git clone https://github.com/skwoyasali/note-app/tree/main/Backend
 cd Backend
 npm install
 ```
@@ -70,7 +69,7 @@ OTP_TTL_SECONDS=300
 
 Start the backend server:
 
-```bash
+```
 npm run dev
 ```
 
@@ -80,9 +79,8 @@ Backend runs at: http://localhost:5000
 
 ### 🌐 3. Frontend Setup
 
-```bash
-# from the project root (note/)
-cd ./frontend        # or cd ../note if you're inside Backend
+```
+cd note
 npm install
 npm run dev
 ```
