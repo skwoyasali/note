@@ -9,7 +9,7 @@ This project includes user authentication (email + OTP and Google OAuth), JWT-ba
 
 - **Deployed App:** https://note-lime-ten.vercel.app/  
 - **Frontend Repo:** https://github.com/skwoyasali/note  
-- **Backend Repo:** https://github.com/skwoyasali/note-app/tree/main/Backend
+- **Backend Repo:** https://github.com/skwoyasali/Note-Backend
 
 ---
 
@@ -46,7 +46,7 @@ npm install
 ### 🛠 2. Backend Setup
 
 ```
-git clone https://github.com/skwoyasali/note-app/tree/main/Backend
+git clone https://github.com/skwoyasali/Note-Backend
 cd Backend
 npm install
 ```
@@ -125,7 +125,7 @@ Project by **Sk Woyas Ali**
 
 - GitHub: https://github.com/skwoyasali  
 - Frontend Repo: https://github.com/skwoyasali/note  
-- Backend Repo: https://github.com/skwoyasali/note-app/tree/main/Backend  
+- Backend Repo: https://github.com/skwoyasali/Note-Backend  
 - Live App: https://note-lime-ten.vercel.app/
 
 ---
